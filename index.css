@@ -50,7 +50,7 @@ section {
 .ques-container label {
     position: absolute;
     align-self: start;
-    font-size: 26px;
+    font-size: calc(var(--text-size) / 2);
     left: 20px;
     top: -32px;
     transition: all ease-in-out 160ms;
@@ -120,7 +120,7 @@ section {
 
 #final-section span {
     color: var(--text-color);
-    font-size: 52px;
+    font-size: var(--text-size);
     font-family: var(--text-font-family);
 }
 
