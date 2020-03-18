@@ -123,3 +123,20 @@ section {
     font-size: 52px;
     font-family: var(--text-font-family);
 }
+
+@media (max-width: 768px) {
+    section {
+        width: 100vw;
+    }
+
+    .ques-container,
+    .ques-container input {
+        width: 100%;
+    }
+
+    #final-section span {
+        display: block;
+        text-align: center;
+    }
+
+}
