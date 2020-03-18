@@ -126,7 +126,7 @@ section {
 
 @media (max-width: 768px) {
     :root {
-        --text-size: 36px;
+        --text-size: 32px;
     }
 
     section {
