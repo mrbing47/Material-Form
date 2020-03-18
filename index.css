@@ -12,7 +12,7 @@
     --accent-light: #7c4dff;
     --text-color: #ede7f6;
     --text-font-family: 'Comfortaa', cursive;
-    ;
+    --text-size: 52px;
 }
 
 body {
@@ -68,7 +68,7 @@ section {
     border-color: var(--accent-dark);
     outline: 0;
     padding: 8px 20px;
-    font-size: 52px;
+    font-size: var(--text-size);
     background: var(--back-color);
 
     font-family: var(--text-font-family);
@@ -88,7 +88,7 @@ section {
 }
 
 .ques-container input:placeholder-shown~label {
-    font-size: 52px;
+    font-size: var(--text-size);
     left: 20px;
     top: 8px;
 }
@@ -125,6 +125,10 @@ section {
 }
 
 @media (max-width: 768px) {
+    :root {
+        --text-size: 36px;
+    }
+
     section {
         width: 100vw;
     }
