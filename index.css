@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --back-color: #311b92;
+    --accent-dark: #651fff;
+    --accent-light: #7c4dff;
+    --text-color: #ede7f6;
+    --text-font-family: 'Comfortaa', cursive;
+    ;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--back-color);
+}
+
+
+
+section {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(500px);
+
+    transition: all ease-out 500ms;
+}
+
+.ques-container {
+
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ques-container label {
+    position: absolute;
+    align-self: start;
+    font-size: 26px;
+    left: 20px;
+    top: -32px;
+    transition: all ease-in-out 160ms;
+    font-family: var(--text-font-family);
+    text-transform: uppercase;
+    word-spacing: 4px;
+
+    color: #ede7f6;
+}
+
+.ques-container input {
+    height: 100%;
+    width: 100%;
+    border-width: 0px 0px 2px;
+    border-color: var(--accent-dark);
+    outline: 0;
+    padding: 8px 20px;
+    font-size: 52px;
+    background: var(--back-color);
+
+    font-family: var(--text-font-family);
+
+    transition: all ease-in-out 200ms;
+
+    color: var(--text-color);
+}
+
+.ques-container input:focus {
+    border-color: var(--accent-light);
+}
+
+.ques-container input::placeholder {
+    color: transparent;
+    visibility: hidden;
+}
+
+.ques-container input:placeholder-shown~label {
+    font-size: 52px;
+    left: 20px;
+    top: 8px;
+}
+
+.ques-container a {
+    padding: 1em 1.25em;
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 12px 32px;
+    align-self: flex-end;
+
+    font-family: var(--text-font-family);
+
+    border-radius: 8px;
+    background-color: var(--accent-dark);
+
+    transition: all ease-in-out 200ms;
+}
+
+.ques-container a:hover {
+    background-color: var(--accent-light);
+}
+
+#q1-section {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#final-section span {
+    color: var(--text-color);
+    font-size: 52px;
+    font-family: var(--text-font-family);
+}
